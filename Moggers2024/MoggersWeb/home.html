@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deteccion</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">Safeline AI</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/proyecto" target="_blank">Proyecto</a></li>
+                        <!-- <li><a href="#">Agents</a></li> -->
+                        <!-- <li><a href="#">About</a></li> -->
+                        <li><a href="#testimonials">Testimoniales</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Safeline AI</h1>
+                <p style="text-align: justify;">
+                    Nuestro sistema de detección con inteligencia artificial redefine la seguridad en entornos industriales. Diseñado para operar en tiempo real, esta innovadora solución utiliza algoritmos avanzados de visión por computadora y machine learning para identificar de manera precisa si los trabajadores en la línea de producción cumplen con los protocolos de seguridad, como el uso obligatorio del casco.
+                </p>                
+            </div>
+        </section>
+    </div>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>Funcionamiento</h2>
+            <div class="flex">
+                <div>
+                    <span class="fas fa-home"></span>
+                    <h3><strong>Componentes principales</strong></h3>
+                    <p></p>
+                    <p>-Modulo de visión por computadora</p>
+                    <p>-Algoritmos de Machine Learning</p>
+                    <p>-Motor de Notificaciones en Tiempo Real</p>
+                    <p>-Interfaz de Usuario (Dashboard)</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-dollar-sign"></span>
+                    <h3><strong>Aplicación</strong></h3>
+                    <p></p>
+                    <p>-Industria de Manufactura</p>
+                    <p>-Construcción</p>
+                    <p>-Almacenes y Centros Logísticos</p>
+                    <p>-Industria Minera</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-chart-line"></span>
+                    <h3></strong>Escala</strong></h3>
+                    <p></p>
+                    <p>Las capacidades de aprendizaje del sistema permiten mejorar continuamente su precisión a medida que se exponen a nuevos datos. Esto hace que el sistema sea ideal tanto para pequeñas operaciones locales como para grandes corporaciones multinacionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="agents">
+        <div class="container">
+            <div class="video-wrapper">
+                <h2>Video modelo funcional</h2>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Zy9zygUMqGE" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="the-best">
+        <div class="flex container">
+            <img src="../static/linea.jpg" alt="Property 1" />
+            <div>
+                <h2>Safeline AI</h2>
+                <p class="large-paragraph">Prueba Safeline AI Ya!</p>
+                <p>Explora cómo nuestro modelo innovador, que combina visión por computadora, algoritmos de machine learning, y un motor de notificaciones en tiempo real, puede transformar tu operación. Con una interfaz de usuario intuitiva y adaptable a diversas industrias, desde manufactura hasta minería, nuestro sistema ofrece precisión y flexibilidad para todo tipo de escala.</p>
+                <ul>
+                    <li>Visión por Computadora: Análisis visual avanzado.</li>
+                    <li>Machine Learning: Algoritmos adaptativos y precisos.</li>
+                    <li>Notificaciones en Tiempo Real: Alertas instantáneas</li>
+                    <li>Interfaz Intuitiva: Dashboard fácil de usar.</li>
+                    <li>Escalabilidad: Ideal para operaciones locales y grandes corporaciones.</li>
+                </ul>
+                            <!-- Método 1: Enlace dentro del botón -->
+                <button class="rounded" onclick="window.location.href='/proyecto'">Sistema</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Arquitectura</h2>
+            <div class="flex">
+                <img src="static/Arquitectura.svg" alt="Property 1" class="small-image" />
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimoniales</h2>
+            <div id="testimonials-slider">
+                <div>
+                    <blockquote>
+                        <p>"Simplemente lo mejor para la industria"</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="../static/GALVANX.jpg" alt="Client 7" />
+                        <p>Jorge Galvan Desarrollador</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>" Gracias al poder del machine learning y las redes neuronales, hemos logrado crear un sistema capaz de identificar en tiempo real si un trabajador en una línea de producción está usando su equipo de seguridad o no."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="../static/yo.jpg" alt="Client 7" />
+                        <p>Sebastian Peñafiel  Desarrollador</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>"Jamas se habia tenido la oportunidad de tener un entorno de trabajo tan seguro y productivo hasta ahora"</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="../static/torre.jpg" alt="Client 7" />
+                        <p>Diego Torre Desarrollador</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>"Esta tecnología no solo puede reducir significativamente los riesgos laborales, sino que también ha permitido que las empresas mantengan un entorno seguro sin necesidad de intervención manual constante."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="../static/agostini.jpg" alt="Client 7" />
+                        <p>Carlos Agostini Desarrollador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="team">
+        <div class="container">
+            <h2>Development Team</h2>
+            <div id="properties-slider" class="slick">
+                <div>
+                    
+                    <img src="./static/GALVANX2.jpg" alt="Property 1" />
+
+                    <div class="property-details">
+                        <p class="price">Jorge Galvan</p>
+                        <address>
+                            Desarrollador del modelo
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./static/yo.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">Sebastian Peñafiel</p>
+                        <address>
+                            Desarrollador del modelo
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./static/torre.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">Diego Torre</p>
+                        <address>
+                            Desarrollador del modelo
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./static/agostini.jpg" alt="Property 1" />
+
+                    <div class="property-details">
+                        <p class="price">Carlos Agostini</p>
+                        <address>
+                            Desarrollador del modelo
+                        </address>
+                    </div>
+                </div>
+
+                
+        
+    </section>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>Acerca del proyecto</h5>
+                <p>¡Gracias por explorar nuestro modelo funcional! Esperamos que este sea solo el comienzo de una nueva era de optimización y automatización en tu industria.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/proyecto">Proyecto</a></li>
+                    <li><a href="#testimonials">Testimoniales</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </div>
+
+        
+
+                <h5 class="follow-us">Moggers</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Desarrollado por Moggers</a>
+        </small>
+    </footer>
+
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+           $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
+
+           $('#testimonials-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+           });
+
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
+
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
+
+           $(document).on('click', (e) => {
+               let target = $(e.target);
+               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                   navMenu.css('right', '-100%');
+               }
+           });
+
+           $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
+
+               if (scrollTop > 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '#000');
+                   headerElem.css('background', '#fff');
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#fff');
+                   headerElem.css('background', 'transparent');
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
+
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
+
+           $(document).trigger('scroll');
+        });
+    </script>
+</body>
+</html>
